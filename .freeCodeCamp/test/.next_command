@@ -270,3 +270,6 @@ CLEAR
 clear
 ./queries.sh
 ./queries.sh
+psql --username=freecodecamp --dbname=postgres
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
